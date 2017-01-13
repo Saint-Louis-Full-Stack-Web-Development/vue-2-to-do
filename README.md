@@ -65,14 +65,16 @@ Responses are also expected as json in the following shape:
     "success": true,
     "status": 200,
     "message": "Records retrieved.",
-    "payload":[
-        {
-            "id": 12345,
-            "title": "Walk the dog",
-            "description": "Put on your shoes, put the dog on a leash, and walk it!",
-            "complete": false
-        }
-    ]
+    "payload":{
+        tasks:[
+            {
+                "id": 12345,
+                "title": "Walk the dog",
+                "description": "Put on your shoes, put the dog on a leash, and walk it!",
+                "complete": false
+            }
+        ]
+    }
 }
 ```
 
